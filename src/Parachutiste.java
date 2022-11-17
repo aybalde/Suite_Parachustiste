@@ -1,10 +1,9 @@
 import java.util.Scanner;
 
 class Parachutiste {
-    static final double G = 9.81;
+
     public static void main(String[] args) {
-        double v0 = 0;
-        double t0 = 0;
+
         Scanner clavier = new Scanner(System.in);
 
         double masse = 80.0;
@@ -22,6 +21,9 @@ class Parachutiste {
         /*******************************************
          * Completez le programme a partir d'ici.
          *******************************************/
+        final double G = 9.81;
+        double v0 = 0;
+        double t0 = 0;
         double vitesse = v0, hauteur = h0, accel = G, t = t0;
         double s = 2 /masse ;
         double rap, q, delta;
