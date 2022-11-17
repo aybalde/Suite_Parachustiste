@@ -28,6 +28,8 @@ class Parachutiste {
         double s = 2 /masse ;
         double rap, q, delta;
         int count = 0;
+        int count1 = 0;
+        int count2 = 0;
         do{
             System.out.printf("%.0f, %.4f, %.4f, %.5f\n", t, hauteur, vitesse, accel);
             t +=1;
@@ -41,13 +43,13 @@ class Parachutiste {
                 System.out.println("## Felix depasse la vitesse du son");
                 count++;
             }
-            if( accel < 0.5 && count < 2){
+            if( accel < 0.5 && count1 < 1){
                 System.out.println("## Felix a atteint sa vitesse maximale");
-                count++;
+                count1++;
             }
-            if (hauteur < 2500 && count < 3){
+            if (hauteur < 2500 && count2 < 1){
                 System.out.println("## Felix ouvre son parachute");
-                count++;
+                count2++;
                 s = 25 / masse;
                 t0 = t;
                 v0 = vitesse;
